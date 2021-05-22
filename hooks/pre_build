@@ -1,0 +1,8 @@
+#!/bin/bash
+curl -sL https://deb.nodesource.com/setup_12.x -o nodesource_setup.sh
+bash nodesource_setup.sh
+apt-get install -y nodejs
+apt-get install -y npm
+hash -d npm
+npm install
+make
