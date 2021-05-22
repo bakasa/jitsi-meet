@@ -6,7 +6,7 @@ var loggingConfig = {
     defaultLogLevel: 'trace',
 
     // Option to disable LogCollector (which stores the logs on CallStats)
-    // disableLogCollector: true,
+     disableLogCollector: true,
 
     // The following are too verbose in their logging with the
     // {@link #defaultLogLevel}:
