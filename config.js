@@ -660,7 +660,7 @@ var config = {
     // disableInviteFunctions: true,
 
     // Disables storing the room name to the recents list
-    // doNotStoreRoom: true,
+     doNotStoreRoom: true,
 
     // Deployment specific URLs.
     // deploymentUrls: {
