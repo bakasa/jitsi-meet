@@ -185,7 +185,8 @@
 }
 
 .smiley-button {
-    display: flex;
+    display: none !important;
+    // display: flex;
     align-items: center;
     justify-content: center;
     height: 40px;

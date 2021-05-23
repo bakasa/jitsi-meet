@@ -22,7 +22,7 @@ compile: compile-load-test
 	$(WEBPACK) -p
 
 compile-load-test:
-	${NPM} install --prefix resources/load-test && ${NPM} run build --prefix resources/load-test
+	${NPM} install --prefix resources/load-test --force && ${NPM} run build --prefix resources/load-test --force
 
 clean:
 	rm -fr $(BUILD_DIR)
@@ -83,12 +83,12 @@ deploy-rnnoise-binary:
 deploy-tflite:
 	cp \
 		$(TFLITE_WASM)/*.wasm \
-		$(DEPLOY_DIR)		
+		$(DEPLOY_DIR)
 
 deploy-meet-models:
 	cp \
 		$(MEET_MODELS_DIR)/*.tflite \
-		$(DEPLOY_DIR)	
+		$(DEPLOY_DIR)
 
 deploy-css:
 	$(NODE_SASS) $(STYLES_MAIN) $(STYLES_BUNDLE) && \
