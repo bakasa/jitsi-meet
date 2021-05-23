@@ -22,7 +22,7 @@ compile: compile-load-test
 	$(WEBPACK) -p
 
 compile-load-test:
-	${NPM} install --prefix resources/load-test --force && ${NPM} run build --prefix resources/load-test --force
+	${NPM} install --prefix resources/load-test && ${NPM} run build --prefix resources/load-test
 
 clean:
 	rm -fr $(BUILD_DIR)
