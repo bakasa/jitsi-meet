@@ -8,7 +8,7 @@
  * config.js, and no new options should be added here.
  */
 
-var interfaceConfig = {
+ var interfaceConfig = {
     APP_NAME: 'Easy Meetings',
     AUDIO_LEVEL_PRIMARY_COLOR: 'rgba(255,255,255,0.4)',
     AUDIO_LEVEL_SECONDARY_COLOR: 'rgba(255,255,255,0.2)',
@@ -22,7 +22,7 @@ var interfaceConfig = {
      * Note: this mode is experimental and subject to breakage.
      */
     AUTO_PIN_LATEST_SCREEN_SHARE: 'remote-only',
-    BRAND_WATERMARK_LINK: 'https://easymeetings.co.za',
+    BRAND_WATERMARK_LINK: '',
 
     CLOSE_PAGE_GUEST_HINT: false, // A html text to be shown to guests on the close page, false disables it
     /**
@@ -53,9 +53,9 @@ var interfaceConfig = {
 
     DEFAULT_BACKGROUND: '#474747',
     DEFAULT_LOCAL_DISPLAY_NAME: 'me',
-    DEFAULT_LOGO_URL: 'images/easymeeting.png',
-    DEFAULT_REMOTE_DISPLAY_NAME: 'EasyMeeting User',
-    DEFAULT_WELCOME_PAGE_LOGO_URL: 'images/easymeeting.png',
+    DEFAULT_LOGO_URL: 'images/jitsilogo.png',
+    DEFAULT_REMOTE_DISPLAY_NAME: 'Fellow Easy Meeter',
+    DEFAULT_WELCOME_PAGE_LOGO_URL: 'images/jitsilogo.png',
 
     DISABLE_DOMINANT_SPEAKER_INDICATOR: false,
 
@@ -98,7 +98,7 @@ var interfaceConfig = {
     DISPLAY_WELCOME_PAGE_CONTENT: false,
     DISPLAY_WELCOME_PAGE_TOOLBAR_ADDITIONAL_CONTENT: false,
 
-    ENABLE_DIAL_OUT: false,
+    ENABLE_DIAL_OUT: true,
 
     ENABLE_FEEDBACK_ANIMATION: false, // Enables feedback star animation.
 
@@ -109,7 +109,7 @@ var interfaceConfig = {
     /**
      * Hide the logo on the deep linking pages.
      */
-    HIDE_DEEP_LINKING_LOGO: true,
+    HIDE_DEEP_LINKING_LOGO: false,
 
     /**
      * Hide the invite prompt in the header when alone in the meeting.
@@ -132,13 +132,13 @@ var interfaceConfig = {
     MAXIMUM_ZOOMING_COEFFICIENT: 1.3,
 
     /**
-     * Whether the mobile app Easy Meetings is to be promoted to participants
+     * Whether the mobile app Jitsi Meet is to be promoted to participants
      * attempting to join a conference in a mobile Web browser. If
      * {@code undefined}, defaults to {@code true}.
      *
      * @type {boolean}
      */
-    MOBILE_APP_PROMO: false,
+    MOBILE_APP_PROMO: true,
 
     /**
      * Specify custom URL for downloading android mobile app.
@@ -155,7 +155,7 @@ var interfaceConfig = {
      */
     MOBILE_DOWNLOAD_LINK_IOS: 'https://easymeetings.co.za',
 
-    NATIVE_APP_NAME: 'EasyMeetings',
+    NATIVE_APP_NAME: 'Easy Meetings',
 
     // Names of browsers which should show a warning stating the current browser
     // has a suboptimal experience. Browsers which are not listed as optimal or
@@ -164,14 +164,14 @@ var interfaceConfig = {
     OPTIMAL_BROWSERS: [ 'chrome', 'chromium', 'firefox', 'nwjs', 'electron', 'safari' ],
 
     POLICY_LOGO: null,
-    PROVIDER_NAME: 'EasyMeetings',
+    PROVIDER_NAME: 'Jitsi',
 
     /**
      * If true, will display recent list
      *
      * @type {boolean}
      */
-    RECENT_LIST_ENABLED: false,
+    RECENT_LIST_ENABLED: true,
     REMOTE_THUMBNAIL_RATIO: 1, // 1:1
 
     SETTINGS_SECTIONS: [ 'devices', 'language', 'moderator', 'profile', 'calendar' ],
@@ -182,7 +182,7 @@ var interfaceConfig = {
      */
     // SHARING_FEATURES: ['email', 'url', 'dial-in', 'embed'],
 
-    SHOW_BRAND_WATERMARK: false,
+    SHOW_BRAND_WATERMARK: true,
 
     /**
     * Decides whether the chrome extension banner should be rendered on the landing page and during the meeting.
